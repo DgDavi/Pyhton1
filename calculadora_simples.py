@@ -1,4 +1,4 @@
-#Calculadora Simmples
+#Calculadora Simples
 
 from math import pow
 
