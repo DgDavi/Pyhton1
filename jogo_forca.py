@@ -19,7 +19,7 @@ while True:
         if letra_secreta in letras_acertadas:
            palavra_formada += letra_secreta
         else:
-            palavra_formada +='*' 
+            palavra_formada +='_' 
 
     print(f'Palavra formada: {palavra_formada}')
 
