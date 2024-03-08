@@ -1,4 +1,4 @@
-#Jokenpo
+# Jokenpo
 
 from os import system
 from random import randint
@@ -17,7 +17,11 @@ while True:
         system('cls')
         print('Digite apenas os números abaixo referente as jogadas.')
         continue
-        
+     
+    if jogador >= 3:
+        	print('Digite apenas os números abaixo referente as jogadas.')
+        	continue
+        	
     print('JO')
     sleep(0.5)
     print('KEN')
