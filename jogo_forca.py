@@ -1,7 +1,7 @@
 #Jogo da Forca
 
 import os
-palavra_secreta = 'clebson'
+palavra_secreta = 'clebson'  #Escolha a palavra que será descoberta
 letras_acertadas = ''
 tentativas= 0
 
