@@ -18,7 +18,7 @@ while True:
         print('Digite apenas os números abaixo referente as jogadas.')
         continue
      
-    if jogador >= 3:
+    if jogador >= 3 or jogador < 0:
         	print('Digite apenas os números abaixo referente as jogadas.')
         	continue
         	
