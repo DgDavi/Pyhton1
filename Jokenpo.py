@@ -1,5 +1,6 @@
 #Jokenpo
 
+from os import system
 from random import randint
 from time import sleep
 
@@ -13,7 +14,8 @@ while True:
 [ 2 ] Tesoura''')
         jogador = int(input('Qual a sua jogada? '))
     except ValueError:
-        print('Digite apenas números.')
+        system('cls')
+        print('Digite apenas os números abaixo referente as jogadas.')
         continue
         
     print('JO')
@@ -29,39 +31,40 @@ while True:
     print('-=' * 11)
 
     if computador == 0:
-                if jogador == 0:
+        if jogador == 0:
                     print('EMPATE')
-                elif jogador == 1:
+        elif jogador == 1:
                     print('JOGADOR VENCE')
-                elif jogador == 2:
+        elif jogador == 2:
                     print('COMPUTADOR VENCE')
-                else:
+        else:
                     print('JOGADA INVALIDA')
 
     if computador == 1:
-            if jogador == 0:
+        if jogador == 0:
                 print('COMPUTADOR VENCE')
-            elif jogador == 1:
+        elif jogador == 1:
                 print('EMPATE')
-            elif jogador == 2:
+        elif jogador == 2:
                 print('JOGADOR VENCE')
-            else:
+        else:
                 print('JOGADA INVALIDA')
         
     if computador == 2:
-            if jogador == 0:
+        if jogador == 0:
                 print('JOGADOR VENCE')
-            elif jogador == 1:
+        elif jogador == 1:
                 print('COMPUTADOR VENCE')
-            elif jogador == 2:
+        elif jogador == 2:
                 print('EMPATE')
-            else:
+        else:
                 print('JOGADA INVALIDA')
                 
     print('Você quer para?')
     saida = input('[s]im [n]ão: ')
     
     if saida == 's':
+        system('cls')
         break
     
     elif saida == 'n':
@@ -69,4 +72,5 @@ while True:
     
     else:
         print('Você não digitou algo válido, o jogo continuará.')
+        system('cls')
         continue
