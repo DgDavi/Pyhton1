@@ -65,7 +65,7 @@ while True:
         else:
                 print('JOGADA INVALIDA')
                 
-    print('Você quer para?')
+    print('Você quer parar?')
     saida = input('[s]im [n]ão: ')
     
     if saida == 's':
