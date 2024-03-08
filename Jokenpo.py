@@ -20,6 +20,7 @@ while True:
      
     if jogador >= 3 or jogador < 0:
         	print('Digite apenas os números abaixo referente as jogadas.')
+            system('cls')
         	continue
         	
     print('JO')
