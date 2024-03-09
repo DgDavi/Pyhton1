@@ -19,9 +19,9 @@ while True:
         continue
      
     if jogador >= 3 or jogador < 0:
-        	print('Digite apenas os números abaixo referente as jogadas.')
-            system('cls')
-        	continue
+        system('cls')
+        print('Digite apenas os números abaixo referente as jogadas.')
+        continue
         	
     print('JO')
     sleep(0.5)
@@ -76,6 +76,6 @@ while True:
         continue
     
     else:
-        print('Você não digitou algo válido, o jogo continuará.')
         system('cls')
+        print('Você não digitou algo válido, o jogo continuará.')
         continue
