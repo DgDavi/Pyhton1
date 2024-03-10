@@ -5,9 +5,9 @@ from random import randint
 from time import sleep
 
 while True:
+    item = ('Pedra', 'Papel', 'Tesoura') 
+    computador = randint(0, 2)
     try:
-        item = ('Pedra', 'Papel', 'Tesoura') 
-        computador = randint(0, 2)
         print('''Suas opções:
 [ 0 ] Pedra
 [ 1 ] Papel
