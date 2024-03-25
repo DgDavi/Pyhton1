@@ -43,7 +43,7 @@ while True:
     if saida == 's':
         break
     elif saida =='n':
-        break
+        continue
     else:
         print('Você não digitou algo válido')
         continue
