@@ -1,4 +1,5 @@
 # Calculadora Utilizando Funções
+
 def soma(a, b):
     print(a + b)
     
@@ -19,6 +20,7 @@ while True:
         operacao = int(input('[1]Soma, [2]Subtração, [3]Multiplicação, [4]Divisão: '))
     except ValueError:
         print('Você não digitou algo válido.')
+        print('Tente Novamente!')
         continue
 
     if operacao >= 5 or operacao <= 0:
