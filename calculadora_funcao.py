@@ -1,16 +1,16 @@
 # Calculadora Utilizando Funções
 
 def soma(a, b):
-    print(a + b)
+    return a +b 
     
 def subtracao(a, b):
-    print(a - b)
+    return a - b
         
 def multiplicacao(a, b):
-    print(a * b)
+    return a * b
     
 def divisao(a, b):
-    print(a / b)
+    return  a / b
 
 while True:
     try:
