@@ -79,3 +79,61 @@ while True:
         system('cls')
         print('Você não digitou algo válido, o jogo continuará.')
         continue
+
+
+
+"""
+from random import choice
+from time import sleep 
+
+while True:
+    opcoes = ['pedra', 'papel', 'tesoura']
+    sorteio = choice(opcoes)
+
+
+    print("""[ 1 ] Pedra
+[ 2 ] Papel
+[ 3 ] Tesoura""")
+    try:
+        jogador = float(input('Digite o Número de acordo com a sua jogada:'))
+    except ValueError:
+        print('Você não digitou algo válido. Tente novamente.')
+        continue
+
+    print('JO')
+    sleep(0.5)
+    print('KEN')
+    sleep(0.5)
+    print('PO!!!')
+    sleep(0.2)
+
+    print(f'O computador jogou {sorteio}')
+
+    if jogador == 1:
+        if sorteio == 'pedra':
+            print('EMPATE!')
+        elif sorteio == 'papel':
+            print('VOCÊ PERDEU')
+        elif sorteio == 'tesoura':
+            print('VOCÊ GANHOU')
+        else:
+            print('JOGADA INVÁLIDA!')
+        
+    if jogador == 2:
+        if sorteio == 'pedra':
+            print('VOCÊ GANHOU!') 
+        elif sorteio == 'papel':
+            print('EMPATE!')
+        elif sorteio == 'tesoura':
+            print('VOCÊ PERDEU!')
+        else:
+            print('JOGADAD INVÁLIDA!')
+
+    if jogador == 3:
+        if sorteio == 'pedra':
+            print('VOCÊ PERDEU!')
+        elif sorteio == 'papel':
+            print('VOÊ GANHOU')
+        elif sorteio == 'tesoura':
+            print('EMPATE!')
+"""
