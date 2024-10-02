@@ -1,3 +1,4 @@
+from time import sleep
 logins = []
 
 def cadastro():
@@ -25,7 +26,9 @@ def cadastro():
     except (ValueError, TypeError):
       print('Entrada inválida.')
       continue
-    return 'Cadastro realizado com sucesso.'
+    print('Cadastro realizado com sucesso.\nVoltando para o menu.')
+    sleep(0.8)
+    return menu()
     
 
 def cadastros_feitos():
@@ -34,28 +37,33 @@ def cadastros_feitos():
   
   for i in logins:
     print(i)
-  return 'Aqui estão todos os logins registrados.'
+  sleep(0.8)
+  return 'Acima estão todos os logins registrados.\nVoltando para o menu.'
 
 def menu():
-  print('-------------------------------\n        Menu Principal\n-------------------------------')
-  print('1 - Ver Pessoas Cadastrada\n2 - Cadastrar Nova Pessoa\n3 - Sair do Sistema')
-  print('-------------------------------')
   while True:
+    print('-------------------------------\n        Menu Principal\n-------------------------------')
+    print('1 - Ver Pessoas Cadastrada\n2 - Cadastrar Nova Pessoa\n3 - Sair do Sistema')
+    print('-------------------------------')
+  
     try: 
       opcao = int(input('Sua opção: '))
       if opcao in [1, 2, 3]:
 
         if opcao == 1:
           print('-------------------------------\n           OPÇÃO 1\n-------------------------------')
-          return cadastros_feitos()
+          print(cadastros_feitos())
+
         elif opcao == 2:
           print('-------------------------------\n           OPÇÃO 2\n-------------------------------')
           return cadastro()
+        
         elif opcao == 3:
           print('-------------------------------\n        Saindo do Sistema\n-------------------------------')
           break
       else:
         print('ERRO: Por favor, digite uma das opçóes válidas: 1, 2, 3.')
+        continue
 
     except (ValueError, TypeError):
       print('ERRO: Por favor, digite uma das opções válidas: 1, 2, 3.')
