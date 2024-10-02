@@ -1,5 +1,11 @@
 from time import sleep
 logins = []
+produtos = {
+  'Camisinha': 3.00,
+  'Lubrificante': 10.00,
+  'Mel do Amor': 
+}
+
 
 def cadastro():
   while True:
@@ -43,7 +49,7 @@ def cadastros_feitos():
 def menu():
   while True:
     print('-------------------------------\n        Menu Principal\n-------------------------------')
-    print('1 - Ver Pessoas Cadastrada\n2 - Cadastrar Nova Pessoa\n3 - Sair do Sistema')
+    print('1 - Ver Pessoas Cadastrada\n2 - Cadastrar Nova Pessoa\n3 - Ver Produtos\n4 - Sair do Sistema')
     print('-------------------------------')
   
     try: 
