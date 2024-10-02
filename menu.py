@@ -1,10 +1,5 @@
 from time import sleep
 logins = []
-produtos = {
-  'Camisinha': 3.00,
-  'Lubrificante': 10.00,
-  'Mel do Amor': 
-}
 
 
 def cadastro():
@@ -45,6 +40,7 @@ def cadastros_feitos():
     print(i)
   sleep(0.8)
   return 'Acima estão todos os logins registrados.\nVoltando para o menu.'
+
 
 def menu():
   while True:
