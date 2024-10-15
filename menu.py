@@ -1,5 +1,24 @@
+import json
 from time import sleep
+
 logins = []
+
+
+def salvar_logins():
+  with open('logins.json', 'w') as arquivo:
+    json.dump(logins, arquivo)
+  print('Logins salvos no arquivo logins.json')
+
+
+def carregar_logins():
+  try:
+    with open('logins.json', 'r') as arquivo:
+      return json.load(arquivo)
+  except FileNotFoundError:
+    return []
+
+
+logins = carregar_logins()
 
 
 def cadastro():
@@ -15,6 +34,7 @@ def cadastro():
       else:
         logins.append(login)
         print('Login cadastrado com sucesso.')
+        salvar_logins()
 
       while True:
         senha = input('Digite sua senha com 8 caracteres: ')
@@ -70,5 +90,6 @@ def menu():
     except (ValueError, TypeError):
       print('ERRO: Por favor, digite uma das opções válidas: 1, 2, 3.')
       continue
+    
 
 menu()
